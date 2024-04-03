@@ -1,0 +1,12 @@
+pkgbase = flexpkg
+	pkgdesc = A new to install programs
+	pkgver = 8
+	pkgrel = 1
+	arch = x86_64
+	license = GPL3
+	depends = gcc
+	depends = python3
+	source = https://github.com/VPeti1/CWAcces/raw/main/flexpkg.tar.gz
+	sha256sums = 53b46e0ae028893a63019af4e06b19b79bb9cfd2497c842eb105ab3543a1ef09
+
+pkgname = flexpkg
