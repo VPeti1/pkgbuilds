@@ -1,11 +1,10 @@
 pkgbase = aiopm
 	pkgdesc = All in one package manager for linux
 	pkgver = 1.9
-	pkgrel = 1
+	pkgrel = 2
 	arch = x86_64
 	license = GPL3
 	depends = gcc
-	depends = eaur
 	source = https://github.com/VPeti1/CWAcces/raw/main/aiopm.tar.gz
 	sha256sums = 118d5dd1461c229ee83eef91a4a811b796982a3f8b3849692dfbf5211042cc55
 
