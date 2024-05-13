@@ -1,0 +1,27 @@
+#Maintainer: VPeti1 (Vasko Peter) 
+
+pkgname=ykey
+pkgver=1
+pkgrel=1
+arch=('x86_64')
+
+license=('GPL3')
+pkgdesc="A simple file validator, encryptor and decryptor"
+
+depends=('go' 'git' 'wget')
+
+source=("https://github.com/VPeti1/CWAcces/raw/main/ykey.tar.gz")
+
+sha256sums=('b33965fc17b4758f545c7690b3a7615456c3e9f824ece8edbf7b76957387d30b')
+
+build() {
+    cd "$srcdir"
+    go build main.go
+}
+
+package() {
+    cd "$srcdir"
+    install -Dm755 main "$pkgdir/usr/bin/ykey"
+}
+
+
