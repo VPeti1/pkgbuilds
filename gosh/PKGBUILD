@@ -1,0 +1,27 @@
+#Maintainer: VPeti1 (Vasko Peter) 
+
+pkgname=gosh
+pkgver=1
+pkgrel=1
+arch=('x86_64')
+
+license=('GPL3')
+pkgdesc="A Go Shell"
+
+depends=('go' 'git')
+
+source=("https://github.com/VPeti1/CWAcces/raw/main/gosh.tar.gz")
+
+sha256sums=('b98bfae6b686cf6109ea5dfe8512ca2db87d251d4fe534a73f5d71c66a701ce4')
+
+build() {
+    cd "$srcdir"
+    go build main.go
+}
+
+package() {
+    cd "$srcdir"
+    install -Dm755 main "$pkgdir/usr/bin/gosh"
+}
+
+

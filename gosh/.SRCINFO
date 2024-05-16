@@ -1,0 +1,12 @@
+pkgbase = gosh
+	pkgdesc = A Go Shell
+	pkgver = 1
+	pkgrel = 1
+	arch = x86_64
+	license = GPL3
+	depends = go
+	depends = git
+	source = https://github.com/VPeti1/CWAcces/raw/main/gosh.tar.gz
+	sha256sums = b98bfae6b686cf6109ea5dfe8512ca2db87d251d4fe534a73f5d71c66a701ce4
+
+pkgname = gosh
